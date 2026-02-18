@@ -23,12 +23,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install jsonschema jq
-      
-
-      - name: Write secret to file and read it
-        run: |
-          echo "${{ secrets.MCP_PRIVATE_KEY }}" > /tmp/secret.txt
-          cat /tmp/secret.txt | base64
 
       - name: Extract version from server.json
         run: |
