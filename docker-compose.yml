@@ -1,0 +1,13 @@
+services:
+  notifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - 8082
+    restart: unless-stopped
+    container_name: notifier
+
+networks:
+  dokploy-network:
+    external: true

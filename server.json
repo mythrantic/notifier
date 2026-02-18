@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.valiantlynx/notifier",
+  "title": "Notifier MCP",
+  "description": "An MCP server that sends notifications to users.",
+  "repository": {
+    "url": "https://github.com/mythrantic/notifier",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://notifier.valiantlynx.com/mcp"
+    }
+  ]
+}
